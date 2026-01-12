@@ -1,58 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header, footer {
-            background-color: #0078d7;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        main {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        a {
-            color: #0078d7;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Gestão de Sala</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi página web</h1>
-    </header>
 
-    <main>
-        <h2>Sobre mí</h2>
-        <p>Hola, soy un entusiasta del desarrollo web. Esta es mi primera página hecha con HTML básico.</p>
+<header class="app-header">
+  <h1>Gestão de Sala</h1>
+  <span>Escola Crescimento</span>
+</header>
 
-        <h3>Mis redes sociales</h3>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">GitHub</a></li>
-        </ul>
+<main class="content">
+  <section class="grid"></section>
+</main>
 
-        <img src="https://via.placeholder.com/400x200" alt="Imagen de ejemplo">
-    </main>
+<footer class="app-footer">
+  <button onclick="proximoDaFila()">Próximo da fila</button>
+  <button onclick="enviarFrequencia()">Enviar frequência</button>
+  <button class="reset-btn" onclick="resetMarcacoes()">Resetar</button>
+</footer>
 
-    <footer>
-        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>
+<script src="script.js"></script>
 </body>
 </html>
